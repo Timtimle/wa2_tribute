@@ -1,0 +1,921 @@
+WHITE ALBUM 2 — CODEX ULTRA FULL REDESIGN PROMPT
+
+You are redesigning an existing local static website for WHITE ALBUM 2.
+
+This is not a minor CSS patch.
+Treat this as a complete visual-design pass.
+
+You have permission to substantially restructure HTML, CSS, and JavaScript if the current structure is holding the design back.
+
+Do not stop after changing fonts, colors, spacing, or a few components.
+This should be a real redesign.
+
+==================================================
+0. PROJECT STRUCTURE
+==================================================
+
+Current workspace:
+
+WA2_Web/
+├─ input/
+├─ references/
+│  ├─ giats/
+│  ├─ ben-hays/
+│  ├─ codrops/
+│  └─ anime-village/
+├─ site/
+├─ DESIGN_DIRECTION.md
+└─ WA2_CODEX_MAX_PROMPT_V4.txt
+
+The current website is in:
+
+/site
+
+User-supplied WHITE ALBUM 2 image assets are in:
+
+/input
+
+The local reference repositories are in:
+
+/references
+
+Read DESIGN_DIRECTION.md first.
+
+Use this prompt as the authoritative execution brief.
+
+==================================================
+1. PROJECT INTENT
+==================================================
+
+This is a fan-made website dedicated to WHITE ALBUM 2.
+
+The website should feel like WHITE ALBUM 2 itself has been translated into a web experience.
+
+Core mood:
+- winter
+- memory
+- music
+- silence
+- emotional distance
+- restrained melancholy
+- nostalgia
+- mature romance
+- visual-novel intimacy
+
+The site must feel:
+- image-driven
+- emotionally restrained
+- polished
+- mature
+- quiet
+- deliberate
+- visually authored
+- unmistakably connected to WHITE ALBUM 2
+
+It must NOT feel like:
+- a SaaS landing page
+- a generic developer portfolio
+- an AI-generated cinematic template
+- a component showcase
+- an anime streaming website
+- a dashboard
+- a card gallery
+- a generic modern startup page
+
+WHITE ALBUM 2 itself is the primary art director.
+
+==================================================
+2. FIRST: INSPECT THE CURRENT PROJECT
+==================================================
+
+Before editing anything:
+
+1. Read DESIGN_DIRECTION.md completely.
+2. Inspect the current /site implementation.
+3. Inspect all user-supplied images inside /input.
+4. Search the local reference repositories selectively.
+5. Study the visual-reference websites listed below where accessible.
+6. Identify what currently makes the site feel AI-generated.
+7. Identify current performance bottlenecks.
+
+Pay particular attention to:
+- English typography
+- tiny body text
+- generic editorial serif usage
+- excessive uppercase micro-labels
+- excessive letter-spacing
+- weak image integration
+- generic image boxes
+- repeated two-column layouts
+- random empty space
+- weak visual rhythm
+- image placement that feels arbitrary
+- overuse of decorative copy
+- snowfall cost
+- waveform redraw cost
+- expensive blur/filter effects
+
+Do not preserve the current design simply because it already exists.
+
+==================================================
+3. VISUAL REFERENCE WEBSITES
+==================================================
+
+Do NOT study only Honkai: Star Rail.
+
+Use a broader reference pool from:
+- visual novels
+- Japanese games
+- anime/game promotional sites
+- premium character pages
+
+Do not copy any one site literally.
+
+Extract specific principles from each reference.
+
+--------------------------------------------------
+A. CLOSEST REFERENCES TO VISUAL-NOVEL PRESENTATION
+--------------------------------------------------
+
+HEAVEN BURNS RED
+https://heaven-burns-red.com/
+https://heaven-burns-red.com/character/
+
+Study:
+- Japanese game / VN-adjacent hierarchy
+- character presentation
+- image-first composition
+- music-oriented atmosphere
+- typography balance
+- large character art integration
+- section rhythm
+- emotional game presentation
+
+TSUKIHIME -A piece of blue glass moon-
+https://typemoon.com/products/tsukihime/
+
+Study:
+- visual-novel promotional composition
+- image-heavy storytelling
+- Japanese typography
+- character presentation
+- decorative graphics that feel authored
+- relationship between text and artwork
+- non-generic section structure
+
+MAHOUTSUKAI NO YORU
+https://typemoon.com/products/mahoyo/
+
+Study:
+- visual-novel atmosphere
+- cinematic imagery
+- restraint
+- typography integrated into artwork
+- scene-oriented presentation
+- how images carry narrative weight
+
+SUMMER POCKETS REFLECTION BLUE
+https://key.visualarts.gr.jp/summer_rb/index.html
+
+Study:
+- Key visual-novel presentation
+- seasonal atmosphere
+- softer emotional hierarchy
+- character-art integration
+- spacing
+- image framing
+- Japanese VN sensibility
+
+ATRI
+https://atri-animation.com/character/atri.html
+
+Study:
+- character-detail presentation
+- character image scale
+- profile hierarchy
+- secondary labels
+- clean anime/VN UI
+- interface supporting artwork rather than dominating it
+
+--------------------------------------------------
+B. HIGH-END GAME / CHARACTER UI REFERENCES
+--------------------------------------------------
+
+HONKAI: STAR RAIL
+https://hsr.hoyoverse.com/en-us/home
+https://hsr.hoyoverse.com/en-us/character?worldIndex=10&charIndex=4
+
+Study:
+- premium character presentation
+- layering
+- full-bleed imagery
+- large silhouettes
+- background graphic systems
+- navigation restraint
+- typography hierarchy
+- visual polish
+- relationship between UI and artwork
+
+Do NOT copy HSR's sci-fi visual identity.
+
+PERSONA 3 RELOAD
+https://persona.atlus.com/p3r/
+
+Study:
+- authored visual identity
+- strong typography hierarchy
+- UI that feels inseparable from the game
+- confident placement
+- non-template composition
+
+Do NOT copy Persona's graphic style.
+Learn the principle that the UI should belong to the game.
+
+METAPHOR: REFANTAZIO
+https://metaphor.atlus.com/
+
+Study:
+- highly authored UI
+- layered graphic elements
+- typography as art direction
+- non-generic transitions
+- deliberate image/text composition
+
+Do NOT imitate its fantasy style.
+
+GRANBLUE FANTASY: RELINK
+https://relink.granbluefantasy.jp/en/characters/
+
+Study:
+- character-page composition
+- silhouettes
+- image scale
+- labels
+- background treatment
+- premium game-site UI
+
+==================================================
+4. LOCAL CODE / IMPLEMENTATION REFERENCES
+==================================================
+
+Do NOT read all repositories in full.
+
+Use code search first.
+
+Spend most reference-reading effort on:
+
+1. references/giats
+2. references/codrops
+3. references/ben-hays
+
+Use:
+
+references/giats
+for:
+- composition
+- media treatment
+- masking
+- transitions
+- GSAP timing
+- cinematic image presentation
+
+references/codrops
+for:
+- typography motion
+- image transitions
+- masking
+- creative scroll treatment
+- experimental composition techniques
+
+references/ben-hays
+for:
+- interaction polish
+- hover behavior
+- motion restraint
+- micro-interactions
+- finishing quality
+
+Use references/anime-village ONLY when useful for:
+- atmospheric layering
+- particle depth
+- snowfall / environmental implementation
+
+Do NOT spend context on:
+- build configuration
+- unrelated routing
+- generic utilities
+- package setup
+- data files that do not affect design
+- unrelated components
+
+Search for relevant implementations and inspect only files useful to the redesign.
+
+==================================================
+5. REFERENCE SELECTION RULE
+==================================================
+
+Do not combine every reference into one visual soup.
+
+Before implementation, decide which reference solves which problem.
+
+Example mapping:
+
+WHITE ALBUM 2
+= emotional direction and identity
+
+Heaven Burns Red / TYPE-MOON / Key
+= visual-novel presentation
+
+HSR / Granblue
+= character composition and image integration
+
+Persona / Metaphor
+= authored UI identity
+
+Giats / Codrops
+= implementation techniques
+
+Ben Hays
+= polish
+
+Anime Village
+= atmospheric implementation only
+
+If a technique looks impressive but does not fit WHITE ALBUM 2, reject it.
+
+==================================================
+6. HARD TYPOGRAPHY REQUIREMENTS
+==================================================
+
+Typography is a critical acceptance criterion.
+
+The redesign is NOT acceptable if the English typography still resembles a generic AI-generated creative website.
+
+Do NOT use:
+- Cormorant Garamond
+- Playfair Display
+- generic fashionable editorial serif combinations
+- monospace as the main UI language
+- tiny decorative English text
+- excessive uppercase metadata
+- excessive letter-spacing
+- oversized serif headlines used only for mood
+- one decorative font for every role
+
+Do NOT choose a font simply because it is popular in modern web design.
+
+Before choosing fonts:
+
+1. Inspect typography hierarchy from the visual-novel and game references.
+2. Identify what makes their typography feel game-specific rather than template-like.
+3. Test multiple open/free font combinations in the actual site.
+4. Choose the strongest combination visually.
+
+If a reference site uses proprietary/custom fonts:
+- do NOT download or copy proprietary font files
+- identify the visual characteristics
+- select high-quality open/free alternatives
+
+Possible font directions to test:
+
+Japanese emotional/display:
+- Noto Serif JP
+- Yu Mincho
+- Hiragino Mincho fallback
+- Shippori Mincho only if it genuinely fits
+
+Japanese functional UI:
+- Noto Sans JP
+- Zen Kaku Gothic New
+
+English display / chapter / character names:
+- Marcellus may be tested
+- or another refined game-oriented open typeface
+- do not force Marcellus if another option works better
+
+English body:
+- Source Serif 4
+- or another highly readable humanist serif/sans chosen through actual comparison
+
+Functional game UI:
+- Barlow Condensed
+- Roboto Condensed
+- Noto Sans
+- or another restrained open game-interface-style family
+
+FONT ROLE REQUIREMENTS:
+
+Use distinct roles for:
+- Japanese emotional/display text
+- English display/chapter title
+- English body
+- Japanese body/labels
+- functional UI/navigation
+- music metadata
+
+Japanese and English typography must coexist naturally.
+
+==================================================
+7. HARD READABILITY REQUIREMENTS
+==================================================
+
+On a desktop viewport around 1920×1080:
+
+- main English body copy: generally 18px–22px
+- important secondary English text: generally at least 15px–17px
+- navigation: generally at least 14px–16px
+- character metadata / track information: comfortably readable
+- tiny metadata below 12px should be extremely rare
+- important information must NEVER be tiny
+
+Do not use opacity to make text effectively unreadable.
+
+Text contrast must remain comfortable against the dark background.
+
+Do not compensate for poor hierarchy by making headlines absurdly large.
+
+If uncertain between:
+- a visually fashionable font
+and
+- a more readable game-oriented font
+
+choose the readable game-oriented option.
+
+==================================================
+8. FONT REVIEW STEP
+==================================================
+
+After implementation, inspect every major section specifically for typography.
+
+Review:
+- prelude / entry screen
+- hero
+- chapter headings
+- Introductory Chapter
+- Closing Chapter
+- Coda
+- character section
+- Music Room
+- track list
+- navigation
+- gallery / memory section
+- ending
+
+If any English text looks:
+- tiny
+- overly decorative
+- excessively spaced
+- weak in contrast
+- like a generic AI portfolio
+
+revise it before declaring the redesign complete.
+
+==================================================
+9. COPYWRITING
+==================================================
+
+Rewrite English text that sounds like GPT.
+
+Rules:
+- shorter
+- quieter
+- more natural
+- more specific
+- emotionally restrained
+- no marketing language
+- no startup language
+- no design-portfolio commentary
+- no fake-poetic filler
+- no sentences explaining the layout itself
+
+Never write lines such as:
+
+"The space between two images is sometimes the most important part of a composition."
+
+That sounds like a designer explaining the website.
+
+Text should feel like it belongs to a WHITE ALBUM 2 fan archive / visual memory.
+
+Use imagery to carry emotion instead of over-explaining everything with text.
+
+==================================================
+10. IMAGE REQUIREMENTS
+==================================================
+
+Image composition is the biggest priority.
+
+The current page is too text-heavy.
+
+Use the supplied Kazusa and Setsuna portraits as major visual assets.
+
+Requirements:
+- no generic portrait cards
+- no repeated bordered rectangles
+- no cheap-looking boxes
+- no floating PNGs that feel randomly pasted on
+- no image placement without visual logic
+
+Use:
+- strong character silhouettes
+- overlap
+- controlled cropping
+- layered compositions
+- masking
+- edge fades
+- background shapes
+- typography integrated with artwork
+- deliberate negative space
+- full-scene imagery
+- large-scale character presence
+
+The page should feel visually rich before the user reads much text.
+
+If the same artwork is reused:
+- crop it differently
+- scale it differently
+- layer it differently
+- change context
+- make reuse feel intentional
+
+Do not use an asset merely because it exists.
+
+==================================================
+11. CHARACTER PRESENTATION
+==================================================
+
+The supplied character portraits are:
+
+- Kazusa Touma
+- Setsuna Ogiso
+
+Treat them as important hero-level artwork.
+
+The character section should approach premium game-character-page quality.
+
+Desired qualities:
+- strong silhouettes
+- large character art
+- confident scale
+- image-first composition
+- controlled layering
+- elegant character names
+- readable labels
+- restrained UI
+- intentional negative space
+- no generic boxes
+
+Take inspiration from HSR and Granblue for presentation quality,
+but reinterpret everything for WHITE ALBUM 2.
+
+The section should feel emotional rather than flashy.
+
+==================================================
+12. IMAGE CONTAINER / BOX RULES
+==================================================
+
+The user explicitly dislikes obvious AI-looking boxes around images.
+
+Therefore:
+- reduce boxy framing dramatically
+- remove generic bordered image containers
+- remove repetitive cards
+- do not put every image inside a rectangle with a caption
+
+Prefer:
+- natural crop boundaries
+- edge fades
+- layered cutouts
+- overlap
+- masking
+- background integration
+- full-bleed imagery
+- negative space
+
+A frame is allowed only when it clearly belongs to the visual direction.
+
+==================================================
+13. LAYOUT REQUIREMENTS
+==================================================
+
+Avoid:
+- repeating image-left / text-right sections
+- repeating text-left / image-right sections
+- centered hero + card layouts
+- random asymmetry
+- huge empty areas that have no visual purpose
+- template-like rhythm
+
+Use:
+- deliberate asymmetry
+- visual scenes
+- image-led transitions
+- controlled variation between chapters
+- visual hierarchy that changes with emotional context
+- strong focal points
+
+Every major section should have a reason to exist visually.
+
+==================================================
+14. MUSIC REQUIREMENTS
+==================================================
+
+Keep and improve:
+- local soundtrack playback
+- Music Room
+- manual track selection
+- story-sync
+- crossfade logic if stable
+- waveform if it performs well
+
+The Music Room should feel like:
+- a visual-novel EXTRA / SOUND MODE screen
+- a polished Japanese game menu
+
+It should NOT feel like:
+- Spotify
+- a dashboard
+- a generic media-player card
+
+Use:
+- strong track-title hierarchy
+- artwork integration
+- restrained controls
+- readable metadata
+- subtle waveform
+
+Do not sacrifice readability for minimalism.
+
+==================================================
+15. BACKGROUND / SNOW / ATMOSPHERE
+==================================================
+
+Keep:
+- dark winter atmosphere
+- snowfall
+- subtle depth
+- cold lighting
+
+Remove or reduce:
+- ugly grain
+- rough noise textures
+- dirty-looking overlays
+- heavy blur
+- unnecessary filters
+- visually expensive effects
+
+The background should feel:
+- deep
+- smooth
+- cold
+- clean
+- atmospheric
+
+Not:
+- empty black
+- dirty
+- noisy
+- artificially "cinematic"
+
+==================================================
+16. PERFORMANCE REQUIREMENTS
+==================================================
+
+Target a visually smooth experience close to 60 FPS on an ordinary desktop GPU.
+
+Performance is an acceptance criterion.
+
+Optimize:
+- snowfall
+- waveform redraw
+- scroll listeners
+- parallax
+- canvas
+- filter usage
+- devicePixelRatio
+- animation loops
+
+Prefer:
+- transforms
+- opacity
+- requestAnimationFrame only when needed
+- cached/static visual calculations
+- fewer, better snow particles
+- capped DPR
+- IntersectionObserver where appropriate
+
+Avoid:
+- canvas filter changes for each particle every frame
+- excessive blur
+- excessive backdrop-filter
+- full waveform redraw at 60 FPS
+- unnecessary continuous animations
+- layout-triggering JS on every scroll event
+
+Keep visual richness but optimize aggressively.
+
+==================================================
+17. HERO
+==================================================
+
+Redesign the hero so it is:
+- image-first
+- immediately recognizable as WHITE ALBUM 2
+- emotionally strong
+- visually balanced
+
+Avoid:
+- huge empty black areas
+- generic giant serif title
+- title text dominating the artwork
+- startup landing-page hierarchy
+
+Artwork and title should feel designed together.
+
+==================================================
+18. INTRODUCTORY / CLOSING / CODA
+==================================================
+
+Each chapter should have its own visual state.
+
+Do not repeat the same section composition three times.
+
+Use:
+- different crops
+- different image scale
+- different layering
+- different emotional temperature
+- soundtrack changes
+- typography hierarchy changes where appropriate
+
+Coda should feel like a visual climax.
+
+Do not rely only on heavier snow or darker color.
+Use composition to create emotional escalation.
+
+==================================================
+19. CHARACTER SECTION
+==================================================
+
+Rebuild the character section around the supplied portrait PNGs.
+
+Requirements:
+- no rectangular portrait boxes
+- no empty placeholders
+- no tiny English copy
+- no generic profile cards
+
+Characters should feel present in the space.
+
+Names and secondary information must remain readable.
+
+==================================================
+20. GALLERY / MEMORY / FRAGMENTS
+==================================================
+
+The gallery must feel curated.
+
+Avoid:
+- random floating images
+- disconnected support banners
+- arbitrary sizes
+- card grids
+- component-demo appearance
+
+Create visual logic between images.
+
+Use:
+- scale hierarchy
+- rhythm
+- overlap
+- crop
+- narrative sequence
+- negative space
+
+==================================================
+21. ENDING
+==================================================
+
+Do not end with:
+- massive generic poetic serif text
+- mostly empty black space
+- tiny unreadable navigation
+
+The ending should feel like:
+- a final VN screen
+- a last memory
+- a quiet emotional close
+
+Use:
+- imagery
+- restrained typography
+- music
+- snow
+- silence / spacing
+
+together.
+
+==================================================
+22. WORKFLOW
+==================================================
+
+Before editing, briefly report:
+
+1. What currently looks AI-generated.
+2. Which visual references you selected.
+3. What each selected reference contributes.
+4. What typography combinations you intend to test.
+5. What performance bottlenecks you intend to remove.
+6. What major structural changes you intend to make.
+
+Then implement the redesign fully.
+
+Do not ask the user for design decisions unless genuinely blocked.
+
+Use your own design judgment based on:
+- WHITE ALBUM 2
+- the supplied assets
+- the reference websites
+- the local reference repositories
+
+==================================================
+23. IMPLEMENTATION PERMISSION
+==================================================
+
+You may:
+- rewrite large parts of HTML
+- rewrite large parts of CSS
+- refactor JavaScript
+- change section order
+- replace typography
+- redesign the Music Room
+- rebuild image compositions
+- remove weak sections
+- add new sections if they strengthen the experience
+
+You must preserve:
+- local static-site compatibility
+- local audio playback
+- important Music Room functionality
+- snowfall concept
+- responsive behavior
+
+Do not introduce React, Next.js, Vue, or another framework.
+
+Avoid heavy dependencies unless there is a compelling reason.
+
+==================================================
+24. FINAL QA
+==================================================
+
+After implementation:
+
+- run the site locally
+- inspect it at desktop resolution
+- inspect responsive behavior
+- check console errors
+- check broken images
+- check audio playback
+- check manual Music Room selection
+- check story-sync
+- check crossfade behavior
+- check waveform
+- check navigation
+- check snowfall
+- check scroll smoothness
+- inspect typography again
+- inspect image composition again
+- inspect readability again
+- inspect performance-sensitive loops again
+
+Fix problems before declaring completion.
+
+==================================================
+25. FINAL ACCEPTANCE CRITERIA
+==================================================
+
+The redesign is only complete if:
+
+- English body text is comfortably readable
+- English typography no longer feels like generic AI editorial design
+- important text is not tiny
+- image composition is clearly stronger than before
+- Kazusa and Setsuna are integrated naturally
+- image boxes/cards are substantially reduced
+- the site is visually rich without becoming cluttered
+- the background is dark but not ugly or empty
+- snowfall looks good without causing obvious lag
+- Music Room feels like part of a VN/game
+- each chapter has a distinct visual identity
+- the page feels authored rather than generated
+- the experience feels unmistakably connected to WHITE ALBUM 2
+
+FINAL PRIORITY ORDER:
+
+1. Image composition
+2. Typography quality and readability
+3. WHITE ALBUM 2 identity
+4. Removal of AI-looking patterns
+5. Performance / smoothness
+6. Character presentation
+7. Music integration
+8. Responsive polish

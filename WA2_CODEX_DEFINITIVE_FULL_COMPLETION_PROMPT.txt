@@ -1,0 +1,956 @@
+WHITE ALBUM 2 — CODEX ULTRA DEFINITIVE COMPLETION PROMPT
+FULL MEDIA REPLACEMENT + REAL MUSIC + EMOTIONAL CLICK/FROST UI + QA
+USE THIS AS THE SINGLE AUTHORITATIVE PROMPT FOR THE NEXT PASS
+
+You are continuing from the CURRENT WHITE ALBUM 2 website in this workspace.
+
+This is the definitive completion pass.
+
+IMPORTANT:
+The previous interaction-polish pass did NOT successfully produce the intended visible click/hover UI.
+Therefore this prompt requires you to implement the interaction system again from scratch where necessary, while ALSO replacing/improving media and integrating real WHITE ALBUM 2 music.
+
+Do not assume the previous interaction effect is already correct.
+Inspect the current implementation and verify visually/code-wise that the requested UI effects actually exist.
+
+==================================================
+0. TOKEN / CONTEXT RULE — DO NOT WASTE TOKENS
+==================================================
+
+Do NOT re-read:
+- old full redesign prompts
+- old interaction prompts
+- old reference repositories in full
+- old external reference websites
+- previous research already completed in this Codex conversation
+
+Do NOT repeat broad visual research.
+
+Treat all previous design direction as already established.
+
+Only inspect what is required for this pass:
+- current /site implementation
+- NEW media under /input
+- current production assets under /site/public
+- current click/hover/button code
+- current audio implementation
+
+Use cheap inventory methods first:
+- filenames
+- folder tree
+- image dimensions
+- aspect ratios
+- file sizes
+- audio filenames
+- audio durations / metadata
+
+Do NOT visually open every image.
+Do NOT fully decode/analyze every audio file.
+Shortlist first, inspect only the strongest candidates.
+
+==================================================
+1. CURRENT DESIGN — PRESERVE WHAT ALREADY WORKS
+==================================================
+
+The current website already has a strong visual foundation.
+
+Preserve:
+- current typography
+- current readable body text sizes
+- current dark winter palette
+- current visual hierarchy
+- current section structure unless media placement clearly needs adjustment
+- current snowfall
+- current navigation
+- current character switcher
+- current responsive behavior
+- current overall emotional direction
+- current premium / visual-novel presentation
+- current performance-conscious implementation
+
+Do NOT redesign the whole website again.
+
+Do NOT replace good typography or layout simply for novelty.
+
+==================================================
+2. THIS PASS HAS THREE REQUIRED GOALS
+==================================================
+
+This pass is NOT complete unless ALL THREE are successfully implemented:
+
+A. AUTHENTIC WHITE ALBUM 2 MEDIA
+- replace weak/generic/repetitive imagery
+- use the new WA2 image library in /input/images
+- give major sections distinct visual identities
+
+B. REAL WHITE ALBUM 2 MUSIC
+- remove any synthetic/browser-generated score
+- use real local audio from /input/music
+- implement story sync, manual selection, crossfade, waveform/progress, volume
+
+C. EMOTIONAL CLICK / HOVER / FROST UI
+- make important buttons and clickable text visibly more beautiful
+- implement snow/frost/powder interactions
+- ensure the effects are clearly visible in actual use
+- support mouse, keyboard, touch, and reduced motion
+
+Do not complete only one or two of these.
+
+==================================================
+3. SOURCE LIBRARY
+==================================================
+
+Treat:
+
+/input/images
+
+as the SOURCE IMAGE LIBRARY.
+
+Treat:
+
+/input/music
+
+as the SOURCE MUSIC LIBRARY.
+
+Do NOT modify originals inside /input.
+
+Production media actually used by the site should be copied into:
+
+/site/public/images
+
+and
+
+/site/public/audio
+
+Do NOT dump the entire library into production.
+
+==================================================
+4. IMAGE INVENTORY — TOKEN EFFICIENT
+==================================================
+
+Inventory /input/images with scripts/shell commands.
+
+Collect:
+- filename
+- dimensions
+- aspect ratio
+- file type
+- file size
+- folder/category
+
+Group likely candidates by role:
+- hero/key visual
+- Introductory
+- Closing
+- Coda
+- Kazusa
+- Setsuna
+- duo/group
+- music/piano
+- school/music club
+- snow/winter
+- emotional CG
+- ending
+- Memory Album/gallery
+- background/environment
+
+Do NOT open every image.
+
+Build a shortlist from metadata first.
+
+Then visually inspect only the strongest candidates.
+
+For duplicates / near-duplicates:
+- prefer the highest-quality version
+- do not inspect all versions
+
+==================================================
+5. AUTHENTIC MEDIA — MUST ACTUALLY CHANGE THE SITE
+==================================================
+
+Audit all major image placements in the current site.
+
+Classify each as:
+- KEEP
+- REPLACE
+- REMOVE
+- REPURPOSE
+
+Replace anything that is:
+- generic
+- AI-generated
+- not clearly WHITE ALBUM 2
+- reused too often
+- awkwardly cropped
+- visually weaker than new assets
+- filler-like
+- disconnected from section meaning
+
+This pass MUST actually change image usage.
+
+Do NOT leave current weak imagery untouched just because it technically works.
+
+==================================================
+6. HERO / ENTRY — MUST USE REAL WA2 ART
+==================================================
+
+The current entry/hero structure may already be good.
+
+KEEP:
+- current typography
+- current layout
+- current spacing
+- current buttons
+- current snow atmosphere
+
+BUT:
+replace any generic/generated environmental hero with an authentic WHITE ALBUM 2 visual from /input/images.
+
+The selected hero should immediately communicate:
+- WHITE ALBUM 2
+- winter
+- music
+- Kazusa / Setsuna
+- memory
+- emotional distance
+
+Choose based on composition, not just resolution.
+
+Tune:
+- crop
+- object-position
+- scale
+- brightness
+- darkness
+- gradient
+- masking
+- edge fade
+- text contrast
+
+The artwork should feel integrated into the design.
+
+Do NOT put it inside a generic card.
+
+Do NOT use an AI-generated winter room if authentic WA2 art exists.
+
+==================================================
+7. INTRODUCTORY CHAPTER
+==================================================
+
+Use authentic imagery appropriate for:
+- school period
+- music club
+- first winter
+- youthful warmth
+- beginning of relationships
+- pre-collapse emotional tone
+
+Use a distinct image identity.
+
+Do not simply reuse hero art.
+
+==================================================
+8. CLOSING CHAPTER
+==================================================
+
+Use authentic imagery appropriate for:
+- older period
+- reflection
+- emotional distance
+- unresolved memories
+- quieter mature atmosphere
+
+Use different images from Introductory where possible.
+
+==================================================
+9. CODA
+==================================================
+
+Coda should visually feel like the climax.
+
+Choose the strongest emotionally appropriate WA2 imagery available.
+
+Use:
+- stronger crop
+- more intimate scale
+- more direct character presence
+- controlled overlap
+- image bleed
+- reduced negative space where appropriate
+
+Do not create the climax only through darker color or larger text.
+
+==================================================
+10. CHARACTER SECTION
+==================================================
+
+Preserve the current character switcher behavior.
+
+Use the strongest Kazusa / Setsuna art available.
+
+If new art is clearly superior:
+- replace current production art
+- adjust crop/object-position
+- preserve interaction
+
+Avoid:
+- portrait cards
+- sticker-like PNG placement
+- decorative boxes
+- generic frame treatment
+
+==================================================
+11. MEMORY ALBUM
+==================================================
+
+Refine or rebuild media usage in Memory Album.
+
+Do NOT let it feel like:
+- repeated crops of the same image
+- random collage
+- placeholder art
+- a card grid
+
+Create a curated sequence with:
+- image variety
+- crop variety
+- emotional progression
+- visual rhythm
+- scale hierarchy
+- space
+- controlled overlap
+
+Every image must have a purpose.
+
+==================================================
+12. MUSIC ROOM IMAGE
+==================================================
+
+Use an authentic WA2 visual that fits:
+- piano
+- performance
+- winter
+- music club
+- Kazusa
+- Setsuna
+- stage/rehearsal/song
+
+Do not use generic generated music-room art when authentic imagery exists.
+
+Keep controls readable.
+
+==================================================
+13. ENDING IMAGE
+==================================================
+
+Use an authentic final image with:
+- quiet
+- nostalgic
+- winter
+- emotionally conclusive tone
+
+Do not end with empty black space if a strong final image exists.
+
+Do not automatically reuse hero art.
+
+==================================================
+14. IMAGE PLACEMENT LANGUAGE
+==================================================
+
+Avoid:
+- card grids
+- boxed CGs
+- random floating images
+- repeated rectangular frames
+- awkward banners
+- meaningless overlays
+
+Prefer:
+- full-bleed crops
+- partial crops
+- edge fades
+- masks
+- layered imagery
+- large background art
+- foreground character cutouts
+- controlled overlap
+- typography integrated with artwork
+- deliberate negative space
+
+Respect asset shape.
+
+Do not force landscape art into bad portrait slots or portrait art into bad wide crops.
+
+==================================================
+15. REAL WHITE ALBUM 2 MUSIC — MUST IMPLEMENT
+==================================================
+
+Use real local music from /input/music.
+
+Completely remove:
+- browser-generated score
+- oscillator-generated music
+- synthetic/procedural soundtrack
+- placeholder score code
+
+If obsolete synth-generation code still exists, delete it.
+
+==================================================
+16. MUSIC INVENTORY
+==================================================
+
+Inventory /input/music cheaply using:
+- filename
+- folder
+- duration
+- file size
+- codec/container if useful
+
+Do NOT decode every track fully just to decide.
+
+Select approximately 5–8 strong tracks.
+
+If available, strongly consider:
+- いつか見た景色 / Itsukamita Keshiki
+- POWDER SNOW Piano / Kazusa
+- Twinkle Snow
+- 幸せな記憶 / Siawase na Kioku
+- 時の魔法 / Toki no Mahou
+- 優しい嘘 / Yasashii Uso
+
+Choose based on emotional fit.
+
+==================================================
+17. STORY MUSIC MAPPING
+==================================================
+
+Create deliberate story-sync mapping.
+
+ENTRY / HERO
+- quiet memory-oriented track
+- nostalgic / wintery
+
+INTRODUCTORY
+- youthful / early winter / school / music-club mood
+
+CLOSING
+- reflective / mature / quieter track
+
+CODA
+- strongest emotionally appropriate track
+
+MUSIC ROOM
+- expose additional selected tracks for manual listening
+
+Do not force examples if the actual library has a better match.
+
+==================================================
+18. AUDIO IMPLEMENTATION
+==================================================
+
+Required:
+- real local audio playback
+- play/pause
+- volume
+- manual selection
+- story sync
+- crossfade
+- waveform/progress
+- no autoplay violation
+
+Prefer:
+- two HTMLAudioElement slots for crossfade
+OR
+- lightweight Web Audio gain control only where necessary
+
+Do NOT decode all MP3s at startup.
+
+Use:
+- metadata preload
+- lazy loading
+- cache only what is necessary
+
+==================================================
+19. CROSSFADE
+==================================================
+
+Track transitions should crossfade smoothly.
+
+Target:
+- roughly 1.2–2.5 seconds
+
+No abrupt cuts unless playback has not started yet.
+
+Ensure old audio does not remain playing underneath.
+
+==================================================
+20. WAVEFORM / PROGRESS
+==================================================
+
+Keep waveform/progress if smooth.
+
+Do NOT redraw expensive waveform graphics at 60 FPS.
+
+Preferred:
+- static/precomputed-looking waveform
+- redraw only on track change / resize
+- continuously update only progress
+
+Do not perform expensive real-time audio analysis unless already efficient.
+
+==================================================
+21. ENTRY SOUND BEHAVIOR
+==================================================
+
+ENTER WITH SOUND:
+- starts the current story track after click
+- integrates with the new warm/frost click effect
+- does not delay entry noticeably
+
+CONTINUE IN SILENCE:
+- enters without playback
+- user can start music later
+
+==================================================
+22. EMOTIONAL CLICK / HOVER UI — MUST ACTUALLY EXIST
+==================================================
+
+The previous interaction pass was not visibly successful.
+
+Therefore:
+do NOT assume it is complete.
+
+Inspect the current CSS/JS and verify whether real visible interaction effects exist.
+
+If the current effects are weak, missing, broken, or not visible:
+REIMPLEMENT THEM.
+
+The UI should feel:
+- emotional
+- winter-like
+- elegant
+- premium
+- restrained
+- visually authored
+- visual-novel-like
+
+Not:
+- generic web app
+- SaaS
+- flashy game UI
+- fantasy/magic
+
+==================================================
+23. PRIMARY INTERACTION TARGETS
+==================================================
+
+Must polish:
+
+1. Enter with sound
+2. Continue in silence
+3. Hero main CTA
+4. Ending / return CTA
+5. Chapter rail
+6. Sound toggle
+7. Main play/pause
+8. Music Room track rows
+9. Story-sync toggle
+10. Important navigation links where appropriate
+
+Do not animate every tiny link.
+
+==================================================
+24. CORE INTERACTION LANGUAGE
+==================================================
+
+Create ONE coherent winter interaction system.
+
+Good visual ideas:
+- frost line forming along underline
+- thin snow accumulation on a 1px line
+- cold shimmer through text
+- line revealed as if traced through snow
+- text clearing like frost leaving glass
+- tiny powder-snow particles dispersing on click
+- underline softly breaking apart
+- subtle cold-to-warm accent for sound actions
+
+Use only a small combination.
+
+Do NOT use all effects at once.
+
+==================================================
+25. ENTER WITH SOUND — SPECIFIC BEHAVIOR
+==================================================
+
+This should be the warmer choice.
+
+IDLE:
+- elegant readable text
+- thin authored line
+- subtle warm-gold music accent allowed
+
+HOVER / FOCUS:
+- frost line becomes clearer
+- soft shimmer through text
+- slight warm undertone appears
+- optional tiny snow motes
+
+PRESS / CLICK:
+- small powder-snow dispersion
+- frost line melts/breaks softly
+- slight warm accent release
+
+IMPORTANT:
+The effect must be clearly visible enough for the user to notice.
+
+Do not make it so subtle that it looks unchanged.
+
+But still avoid:
+- explosion
+- confetti
+- giant glow
+- bounce
+- neon
+
+==================================================
+26. CONTINUE IN SILENCE — SPECIFIC BEHAVIOR
+==================================================
+
+This should feel colder and quieter.
+
+IDLE:
+- slightly lower emphasis
+- fully readable
+
+HOVER / FOCUS:
+- cool-blue frost line
+- text becomes clearer
+- line appears like it is drawn through snow
+
+CLICK:
+- frost recedes
+- small cold powder-snow retreat
+- fewer particles than the sound option
+
+No warm accent.
+
+==================================================
+27. HERO CTA / ENDING CTA
+==================================================
+
+Important text CTAs should feel authored.
+
+Suggested system:
+
+Idle:
+- fine underline / line fragment
+
+Hover:
+- line grows from one side
+- frost trace appears
+- text brightness changes slightly
+- arrow moves 2–4px
+
+Click:
+- line softly fragments
+- tiny snow response
+
+Do not make these into big buttons.
+
+==================================================
+28. MUSIC CONTROL INTERACTION
+==================================================
+
+PLAY/PAUSE:
+- restrained ring/line pulse
+- tiny waveform response
+- no giant glow
+
+SOUND TOGGLE:
+- bars can become slightly more alive while playing
+- subtle warm/cold state
+
+TRACK ROWS:
+- active track gets fine side line/frost trace
+- hover reveals subtle directional line
+- no card hover
+
+STORY SYNC:
+- elegant readable state
+- no oversized mobile toggle style
+
+==================================================
+29. CLICK PARTICLES
+==================================================
+
+If using particles:
+
+- approximately 4–12 particles per click
+- resemble powder snow / frost dust
+- disappear quickly
+- event-driven only
+- no permanent loop
+- no hundreds of DOM nodes
+- clean up after animation
+- reuse lightweight effect layer if possible
+
+Do NOT make them look like:
+- stars
+- magic
+- sparkles
+- fireworks
+- fantasy energy
+
+==================================================
+30. INTERACTION TIMING
+==================================================
+
+Suggested:
+- hover: 180–350ms
+- click effect: 250–600ms
+- longer emotional accent: up to ~800ms only if subtle
+
+Do not delay navigation or playback.
+
+==================================================
+31. ACCESSIBILITY
+==================================================
+
+Must work for:
+- mouse
+- keyboard
+- touch
+
+Keep visible focus states.
+
+Do not rely only on hover.
+
+Do not remove outlines unless replacing with an equally visible custom focus treatment.
+
+==================================================
+32. REDUCED MOTION
+==================================================
+
+Respect prefers-reduced-motion.
+
+When enabled:
+- disable click particles
+- disable shimmer sweeps
+- disable unnecessary movement
+- preserve color/underline/frost/focus states
+
+==================================================
+33. TYPOGRAPHY — DO NOT REGRESS
+==================================================
+
+Do not re-open typography design.
+
+Keep current:
+- fonts
+- sizes
+- hierarchy
+- readability
+
+Do not introduce:
+- tiny English text
+- excessive letter-spacing
+- generic editorial serif
+- micro uppercase labels everywhere
+
+==================================================
+34. PERFORMANCE
+==================================================
+
+Target a smooth near-60 FPS experience.
+
+Avoid:
+- video backgrounds
+- heavy WebGL
+- new permanent particle systems
+- huge blur
+- repeatedly animated filters
+- large animated box-shadows
+- heavy animation libraries
+- repeated forced layout reads
+
+Prefer:
+- transform
+- opacity
+- pseudo-elements
+- Web Animations API
+- event-triggered animation
+
+Do NOT add GSAP, Framer Motion, Three.js, etc. just for button polish unless already part of the project.
+
+==================================================
+35. RESPONSIVE QA
+==================================================
+
+Check:
+- wide desktop
+- normal desktop
+- tablet
+- mobile
+
+Ensure:
+- faces are not cropped badly
+- hero remains readable
+- section focal points remain visible
+- buttons remain readable
+- interactions still work
+- no overflow
+
+==================================================
+36. OLD GENERATED ASSET CLEANUP
+==================================================
+
+Audit /site/public.
+
+If old generic/generated artwork is no longer used:
+- remove stale references
+- remove unused production assets if safe
+
+Do NOT delete /input originals.
+
+==================================================
+37. FILE SCOPE
+==================================================
+
+You may modify:
+- /site/index.html
+- /site/styles.css
+- /site/script.js
+- /site/public/images
+- /site/public/audio
+
+Small config changes only if necessary.
+
+Do NOT:
+- rewrite framework
+- convert project to React/Next/Vue
+- clone references
+- redo research
+- modify /input originals
+
+==================================================
+38. SHORT PRE-IMPLEMENTATION REPORT
+==================================================
+
+Keep this concise.
+
+Before editing, report only:
+
+- number of source images found
+- number of source audio tracks found
+- selected hero image
+- selected Introductory image(s)
+- selected Closing image(s)
+- selected Coda image(s)
+- selected Music Room image
+- selected Ending image
+- selected soundtrack list / mapping
+- whether current click/frost interaction is actually present or needs reimplementation
+
+Then implement immediately.
+
+Do NOT give a long design essay.
+
+==================================================
+39. REQUIRED QA
+==================================================
+
+After implementation:
+
+1. Run dev site.
+2. Run production build.
+3. Check console errors.
+4. Verify all image paths.
+5. Verify all audio paths.
+6. Test Enter with sound.
+7. Test Continue in silence.
+8. Test hover/focus/click effects.
+9. Test hero CTA.
+10. Test ending CTA.
+11. Test play/pause.
+12. Test volume.
+13. Test manual track selection.
+14. Test story sync.
+15. Test crossfade.
+16. Test waveform/progress.
+17. Test chapter rail.
+18. Test character switcher.
+19. Test keyboard navigation.
+20. Test reduced motion.
+21. Test desktop crop.
+22. Test mobile crop.
+23. Confirm synthetic music code is gone.
+24. Confirm weak/generic hero imagery is gone.
+25. Confirm visible click/frost/snow effects actually work.
+26. Confirm performance has not noticeably regressed.
+
+==================================================
+40. ACCEPTANCE CRITERIA
+==================================================
+
+This pass is NOT complete unless:
+
+MEDIA:
+- hero uses authentic WHITE ALBUM 2 imagery
+- Introductory has distinct imagery
+- Closing has distinct imagery
+- Coda has distinct strong imagery
+- Memory Album is improved
+- Music Room uses suitable WA2 imagery
+- Ending uses appropriate WA2 imagery
+- major image repetition is reduced
+
+MUSIC:
+- real local WHITE ALBUM 2 tracks are used
+- synthetic/browser-generated score is completely removed
+- manual listening works
+- story sync works
+- crossfade works
+- volume works
+- waveform/progress works
+
+INTERACTION:
+- Enter with sound has visible warm frost/snow response
+- Continue in silence has visible colder frost/snow response
+- hero/ending CTAs feel authored
+- music controls have refined interaction
+- keyboard focus is polished
+- reduced-motion works
+- effects are noticeable but not flashy
+
+QUALITY:
+- typography remains intact
+- layout remains strong
+- performance remains smooth
+- no major broken media links
+- no major console errors
+- no obvious responsive crop failures
+
+==================================================
+41. FINAL INSTRUCTION
+==================================================
+
+Do not merely analyze.
+
+Do not stop after inventory.
+
+Do not stop after replacing images.
+
+Do not stop after adding music.
+
+Do not stop after adding CSS that is too subtle to notice.
+
+ACTUALLY complete all three areas:
+
+1. AUTHENTIC WHITE ALBUM 2 MEDIA
+2. REAL WHITE ALBUM 2 MUSIC
+3. VISIBLE EMOTIONAL SNOW/FROST CLICK UI
+
+Preserve the strong current design.
+
+This is the single definitive completion pass.
