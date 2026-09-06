@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A fan-made winter memory dedicated to WHITE ALBUM 2 — its music, distance, and quiet aftermath."
+    />
+    <meta name="theme-color" content="#07101d" />
+    <meta property="og:title" content="WHITE ALBUM 2 — A Winter Memory" />
+    <meta
+      property="og:description"
+      content="Three movements about music, distance, and the things that could not be unsaid."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://white-album-2-winter-memory.beobeo7713.chatgpt.site/" />
+    <meta property="og:image" content="https://white-album-2-winter-memory.beobeo7713.chatgpt.site/og.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="2560" />
+    <meta property="og:image:height" content="1440" />
+    <meta property="og:image:alt" content="Setsuna embracing someone beneath the winter snow in WHITE ALBUM 2" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WHITE ALBUM 2 — A Winter Memory" />
+    <meta
+      name="twitter:description"
+      content="Three movements about music, distance, and the things that could not be unsaid."
+    />
+    <meta name="twitter:image" content="https://white-album-2-winter-memory.beobeo7713.chatgpt.site/og.jpg" />
+    <meta name="twitter:image:alt" content="Setsuna embracing someone beneath the winter snow in WHITE ALBUM 2" />
+    <link rel="canonical" href="https://white-album-2-winter-memory.beobeo7713.chatgpt.site/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&amp;family=Marcellus&amp;family=Noto+Serif+JP:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script>document.documentElement.className = "js";</script>
+    <title>WHITE ALBUM 2 — A Winter Memory</title>
+  </head>
+  <body class="is-locked">
+    <a class="skip-link" href="#story">Skip to the story</a>
+    <canvas class="snow" id="snow" aria-hidden="true"></canvas>
+    <div class="scroll-line" aria-hidden="true"><i></i></div>
+
+    <aside class="prelude" id="prelude" role="dialog" aria-modal="true" aria-labelledby="prelude-title">
+      <img class="prelude__scene" src="/images/coda-setsuna.jpg" width="2560" height="1440" alt="" />
+      <div class="prelude__shade" aria-hidden="true"></div>
+      <div class="prelude__content">
+        <p class="prelude__jp" lang="ja">冬の記憶を、もう一度。</p>
+        <h2 id="prelude-title">The music is waiting.</h2>
+        <p>This fan-made archive pairs its winter memory with music from WHITE ALBUM 2. Choose how you want to enter.</p>
+        <div class="prelude__actions">
+          <button class="entry-button entry-button--primary" id="enter-sound" type="button">
+            <span class="action-label" data-label="Enter with sound">Enter with sound</span><i aria-hidden="true">&#9834;</i>
+          </button>
+          <button class="entry-button" id="enter-silent" type="button"><span class="action-label" data-label="Continue in silence">Continue in silence</span></button>
+        </div>
+      </div>
+      <p class="prelude__note">Headphones recommended · Fan-made tribute</p>
+    </aside>
+
+    <header class="site-header" id="site-header">
+      <a class="site-mark" href="#top" aria-label="WHITE ALBUM 2, back to top">
+        <span class="site-mark__wa">WA</span><span class="site-mark__two">2</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#story">Story</a>
+        <a href="#characters">Characters</a>
+        <a href="#memories">Memories</a>
+        <a href="#music">Music</a>
+      </nav>
+      <button class="sound-pill" id="sound-toggle" type="button" aria-label="Play the current track" aria-pressed="false">
+        <span class="sound-pill__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span id="sound-label">Sound off</span>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="#story">Story</a><a href="#characters">People</a><a href="#music">Music</a>
+    </nav>
+
+    <nav class="chapter-rail" aria-label="Story movements">
+      <a href="#intro" data-rail="1"><span>01</span><i></i><b>Introductory</b></a>
+      <a href="#closing" data-rail="2"><span>02</span><i></i><b>Closing</b></a>
+      <a href="#coda" data-rail="3"><span>03</span><i></i><b>Coda</b></a>
+    </nav>
+
+    <main id="top">
+      <section class="hero" data-scene-track="0" data-nav-section="top" aria-labelledby="hero-title">
+        <div class="hero__light hero__light--cold" aria-hidden="true"></div>
+        <div class="hero__light hero__light--warm" aria-hidden="true"></div>
+        <div class="hero__staff" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="hero__art" aria-hidden="true">
+          <img src="/images/wa2-cover.jpg" width="1915" height="2715" alt="" decoding="async" fetchpriority="high" />
+        </div>
+
+        <div class="hero__copy">
+          <p class="hero__jp reveal-line" lang="ja"><span>届かない恋</span></p>
+          <p class="hero__eyebrow">A winter memory</p>
+          <h1 id="hero-title"><span>WHITE ALBUM</span><b>2</b></h1>
+          <p class="hero__note">Music brought them into the same room. Winter asked what it would cost to stay.</p>
+          <a class="scene-link" href="#story"><span><span class="action-label" data-label="Begin the first movement">Begin the first movement</span></span><i aria-hidden="true">&darr;</i></a>
+        </div>
+
+        <div class="hero__folio" aria-hidden="true">
+          <span>北原春希</span><i></i><span>小木曽雪菜</span><i></i><span>冬馬かずさ</span>
+        </div>
+      </section>
+
+      <section class="prologue" id="story" data-nav-section="story">
+        <div class="prologue__index" aria-hidden="true">00</div>
+        <div class="prologue__copy" data-reveal>
+          <p class="section-kicker">The memory begins in a music room</p>
+          <h2>Three people. One unfinished song.</h2>
+          <p>
+            A guitar learned too late. A piano heard through the wall. A voice that made an empty room feel complete.
+            For a while, that was enough.
+          </p>
+        </div>
+        <p class="prologue__vertical" lang="ja">あの冬、僕たちは同じ歌を聴いていた。</p>
+      </section>
+
+      <section class="movement movement--intro" id="intro" data-scene-track="1" aria-labelledby="intro-title">
+        <div class="movement__sticky">
+          <div class="movement__word" aria-hidden="true">INTRODUCTORY</div>
+          <div class="movement__glow" aria-hidden="true"></div>
+          <div class="movement__staff" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="movement__portrait movement__portrait--echo" aria-hidden="true">
+            <img class="media-rotate-cw" src="/images/intro-kazusa.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div class="movement__portrait movement__portrait--lead" aria-hidden="true">
+            <img src="/images/intro-setsuna.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div class="movement__copy" data-reveal>
+            <p class="chapter-number">First movement · December</p>
+            <h2 id="intro-title"><span>Introductory</span> Chapter</h2>
+            <p class="movement__jp" lang="ja">はじまりは、ひとつの歌だった。</p>
+            <p>
+              They found each other through a song: one at the microphone, one at the piano, and one still trying to
+              keep up on guitar.
+            </p>
+            <dl class="scene-facts">
+              <div><dt>Place</dt><dd>Light Music Club</dd></div>
+              <div><dt>Season</dt><dd>First snow</dd></div>
+            </dl>
+          </div>
+          <p class="movement__aside" data-reveal>Before the promise, there was rehearsal.</p>
+        </div>
+      </section>
+
+      <section class="movement movement--closing" id="closing" data-scene-track="2" aria-labelledby="closing-title">
+        <div class="movement__sticky">
+          <div class="movement__word" aria-hidden="true">CLOSING</div>
+          <div class="movement__glow" aria-hidden="true"></div>
+          <div class="movement__portrait movement__portrait--echo" aria-hidden="true">
+            <img class="media-rotate-cw" src="/images/closing-setsuna.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div class="movement__portrait movement__portrait--lead" aria-hidden="true">
+            <img src="/images/closing-kazusa.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div class="movement__copy" data-reveal>
+            <p class="chapter-number">Second movement · Years later</p>
+            <h2 id="closing-title"><span>Closing</span> Chapter</h2>
+            <p class="movement__jp" lang="ja">忘れたふりだけが、上手くなった。</p>
+            <p>
+              Time moved on. The first winter did not. What had been left unsaid waited beneath ordinary days.
+            </p>
+            <dl class="scene-facts">
+              <div><dt>Distance</dt><dd>Measured in years</dd></div>
+              <div><dt>Silence</dt><dd>Never empty</dd></div>
+            </dl>
+          </div>
+          <p class="movement__aside" data-reveal>The familiar melody returns in another key.</p>
+        </div>
+      </section>
+
+      <section class="movement movement--coda" id="coda" data-scene-track="3" aria-labelledby="coda-title">
+        <div class="movement__sticky">
+          <div class="movement__word" aria-hidden="true">CODA</div>
+          <div class="movement__glow" aria-hidden="true"></div>
+          <div class="movement__seam" aria-hidden="true"></div>
+          <div class="movement__portrait movement__portrait--echo" aria-hidden="true">
+            <img src="/images/coda-setsuna.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div class="movement__portrait movement__portrait--lead" aria-hidden="true">
+            <img class="media-rotate-cw" src="/images/coda-kazusa.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div class="movement__copy" data-reveal>
+            <p class="chapter-number">Final movement · Vienna / Tokyo</p>
+            <h2 id="coda-title">Coda</h2>
+            <p class="movement__jp" lang="ja">選ぶことは、失うことだった。</p>
+            <p>
+              There is no answer that leaves every promise whole. Only a choice, and the life that follows it.
+            </p>
+            <dl class="scene-facts">
+              <div><dt>Tempo</dt><dd>Adagio</dd></div>
+              <div><dt>After</dt><dd>The last note</dd></div>
+            </dl>
+          </div>
+          <p class="movement__aside" data-reveal>The song ends. Its echo does not.</p>
+        </div>
+      </section>
+
+      <section class="interlude" aria-label="Interlude">
+        <div class="interlude__line" aria-hidden="true"></div>
+        <p data-reveal>“If only we had met in a different winter.”</p>
+        <span lang="ja" data-reveal>それでも、あの歌を忘れない。</span>
+      </section>
+
+      <section class="characters" id="characters" data-nav-section="characters" data-character-stage="kazusa" aria-labelledby="character-heading">
+        <header class="characters__header" data-reveal>
+          <p class="section-kicker">The two people at the heart of the winter</p>
+          <h2 id="character-heading">Characters</h2>
+        </header>
+
+        <div class="character-stage" aria-live="polite">
+          <div class="character-stage__name character-stage__name--kazusa" aria-hidden="true">TOUMA</div>
+          <div class="character-stage__name character-stage__name--setsuna" aria-hidden="true">OGISO</div>
+          <div class="character-stage__light" aria-hidden="true"></div>
+          <div class="character-art character-art--kazusa" aria-hidden="true">
+            <img src="/images/closing-kazusa.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div class="character-art character-art--setsuna" aria-hidden="true">
+            <img src="/images/intro-setsuna.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" />
+          </div>
+
+          <div class="character-profiles">
+            <article class="character-profile is-active" id="character-panel-kazusa" role="tabpanel" aria-labelledby="character-tab-kazusa" data-profile="kazusa">
+              <p class="character-profile__count">01 / Piano</p>
+              <p class="character-profile__jp" lang="ja">冬馬 かずさ</p>
+              <h3>Kazusa Touma</h3>
+              <p class="character-profile__role">Pianist · The note held back</p>
+              <p>
+                Guarded, exacting, and most honest when her hands are on the keys. Distance is easier for Kazusa than
+                saying what she wants.
+              </p>
+            </article>
+            <article class="character-profile" id="character-panel-setsuna" role="tabpanel" aria-labelledby="character-tab-setsuna" data-profile="setsuna" hidden>
+              <p class="character-profile__count">02 / Voice</p>
+              <p class="character-profile__jp" lang="ja">小木曽 雪菜</p>
+              <h3>Setsuna Ogiso</h3>
+              <p class="character-profile__role">Vocalist · The promise kept close</p>
+              <p>
+                Warm enough to bring three people together, and brave enough to keep reaching for that winter even
+                after it hurts.
+              </p>
+            </article>
+          </div>
+
+          <div class="character-tabs" role="tablist" aria-label="Choose a character">
+            <button class="is-active" id="character-tab-kazusa" type="button" role="tab" aria-selected="true" aria-controls="character-panel-kazusa" tabindex="0" data-character="kazusa">
+              <span>01</span><b>Kazusa</b><i lang="ja">かずさ</i>
+            </button>
+            <button id="character-tab-setsuna" type="button" role="tab" aria-selected="false" aria-controls="character-panel-setsuna" tabindex="-1" data-character="setsuna">
+              <span>02</span><b>Setsuna</b><i lang="ja">雪菜</i>
+            </button>
+          </div>
+          <p class="character-stage__hint">Use ← → to change character</p>
+        </div>
+      </section>
+
+      <section class="fragments" id="memories" data-nav-section="memories" aria-labelledby="memory-heading">
+        <header class="fragments__header" data-reveal>
+          <p class="section-kicker">Fragments kept after the snow</p>
+          <h2 id="memory-heading">Memory Album</h2>
+        </header>
+
+        <div class="fragment fragment--room" data-reveal>
+          <div class="fragment__crop"><img class="media-rotate-cw" src="/images/intro-kazusa.jpg" width="2560" height="1440" alt="Kazusa Touma sitting alone at a school desk" loading="lazy" decoding="async" /></div>
+          <p><span>Scene 01</span>An ordinary afternoon, before the first note changed everything.</p>
+        </div>
+
+        <div class="fragment fragment--diptych" data-reveal>
+          <div class="fragment__half fragment__half--kazusa" aria-hidden="true"><img class="media-rotate-ccw" src="/images/music-setsuna.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" /></div>
+          <div class="fragment__half fragment__half--setsuna" aria-hidden="true"><img src="/images/closing-kazusa.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" /></div>
+          <p><span>Scene 02</span>A voice in the music room. A silence years later.</p>
+        </div>
+
+        <div class="fragment fragment--detail fragment--detail-kazusa" data-reveal>
+          <img src="/images/memory-kazusa.jpg" width="2560" height="1440" alt="Kazusa Touma facing her reflection" loading="lazy" decoding="async" />
+          <p><span>Scene 03</span>The person in the mirror, and the words held back.</p>
+        </div>
+
+        <div class="fragment fragment--detail fragment--detail-setsuna" data-reveal>
+          <img src="/images/coda-setsuna.jpg" width="2560" height="1440" alt="Setsuna holding someone close beneath falling snow" loading="lazy" decoding="async" />
+          <p><span>Scene 04</span>What remained when winter returned.</p>
+        </div>
+      </section>
+
+      <section class="music-room" id="music" data-nav-section="music" aria-labelledby="music-heading" data-active-track="0">
+        <div class="music-room__backdrop" aria-hidden="true"><img class="media-rotate-ccw" src="/images/music-setsuna.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" /></div>
+        <div class="music-room__veil" aria-hidden="true"></div>
+
+        <header class="music-room__header" data-reveal>
+          <p class="section-kicker">Extra · Sound Mode</p>
+          <h2 id="music-heading">Music Room</h2>
+          <p>Six themes from WHITE ALBUM 2, kept local and mapped to the story's changing seasons.</p>
+        </header>
+
+        <div class="sound-mode" data-reveal>
+          <div class="track-list" role="group" aria-label="Soundtrack">
+            <button class="track is-active" type="button" data-track="0" aria-current="true">
+              <span>01</span><span><b>Itsukamita Keshiki</b><i>Entry · A remembered landscape</i></span><em>02:36 ↻</em>
+            </button>
+            <button class="track" type="button" data-track="1">
+              <span>02</span><span><b>Twinkle Snow</b><i>Introductory Chapter · Instrumental</i></span><em>04:47 ↻</em>
+            </button>
+            <button class="track" type="button" data-track="2">
+              <span>03</span><span><b>Honesty</b><i>Closing Chapter</i></span><em>03:44 ↻</em>
+            </button>
+            <button class="track" type="button" data-track="3">
+              <span>04</span><span><b>POWDER SNOW</b><i>Kazusa · Piano</i></span><em>03:41 ↻</em>
+            </button>
+            <button class="track" type="button" data-track="4">
+              <span>05</span><span><b>Siawasenakioku</b><i>After the last note · Piano</i></span><em>03:39 ↻</em>
+            </button>
+            <button class="track" type="button" data-track="5">
+              <span>06</span><span><b>Tokinomahou</b><i>Extra · Instrumental</i></span><em>03:33 ↻</em>
+            </button>
+          </div>
+
+          <div class="now-playing">
+            <p class="now-playing__status" id="play-status">Selected track</p>
+            <div class="now-playing__title" aria-live="polite">
+              <span id="track-number">01</span>
+              <div><h3 id="track-title">Itsukamita Keshiki</h3><p id="track-jp" lang="ja">いつか見た景色</p></div>
+            </div>
+
+            <div class="waveform" id="waveform-shell">
+              <canvas id="waveform" aria-label="Waveform visualization"></canvas>
+              <i class="waveform__progress" id="wave-progress" aria-hidden="true"></i>
+            </div>
+
+            <div class="transport">
+              <button class="play-button" id="play-button" type="button" aria-label="Play Itsukamita Keshiki" aria-pressed="false"><i aria-hidden="true"></i></button>
+              <p class="timecode"><span id="time-current">00:00</span><i>/</i><span id="time-total">02:36</span></p>
+              <label class="volume-control"><span>Volume</span><input id="volume" type="range" min="0" max="1" value="0.58" step="0.01" /></label>
+            </div>
+
+            <div class="sync-row">
+              <button class="sync-toggle is-on" id="sync-toggle" type="button" aria-pressed="true"><i aria-hidden="true"></i><span>Story sync on</span></button>
+              <p>Choosing a track switches to manual listening.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ending" id="ending" data-scene-track="4" aria-labelledby="ending-title">
+        <div class="ending__image" aria-hidden="true"><img src="/images/coda-setsuna.jpg" width="2560" height="1440" alt="" loading="lazy" decoding="async" /></div>
+        <div class="ending__copy" data-reveal>
+          <p lang="ja">また、冬が来る。</p>
+          <h2 id="ending-title">After the last note</h2>
+          <span>Some memories do not fade. They become quieter.</span>
+          <a class="scene-link scene-link--up" href="#top"><span><span class="action-label" data-label="Return to the beginning">Return to the beginning</span></span><i aria-hidden="true">&uarr;</i></a>
+        </div>
+        <footer class="ending__footer">
+          <p>WHITE ALBUM 2 fan-made tribute</p>
+          <p>Authentic WHITE ALBUM 2 imagery · Music from the local tribute collection</p>
+        </footer>
+      </section>
+    </main>
+
+    <div class="audio-rack" aria-hidden="true">
+      <audio id="audio-a" preload="metadata" loop></audio>
+      <audio id="audio-b" preload="metadata" loop></audio>
+    </div>
+
+    <noscript><style>.prelude{display:none}.is-locked{height:auto;overflow:auto}[data-reveal],.hero__jp span,.hero__eyebrow,.hero h1,.hero__note,.hero .scene-link{opacity:1;transform:none}</style></noscript>
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
